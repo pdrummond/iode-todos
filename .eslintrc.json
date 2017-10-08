@@ -1,0 +1,16 @@
+{
+	"extends": ["react-app"],
+	"env": {
+		"node": true,
+		"browser": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 8,
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"sourceType": "module"
+	},
+	"plugins": ["react"],
+	"rules": {}
+}
