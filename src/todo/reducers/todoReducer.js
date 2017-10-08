@@ -2,17 +2,12 @@ import * as Actions from "../actionTypes/todoActionTypes";
 import update from "immutability-helper";
 
 const initialState = {
-	nextTodoId: 3,
+	nextTodoId: 2,
 	visibilityFilter: "SHOW_ALL",
 	todos: [
 		{
 			id: 1,
 			text: "Todo 1",
-			completed: false
-		},
-		{
-			id: 2,
-			text: "Todo 2",
 			completed: false
 		}
 	]
