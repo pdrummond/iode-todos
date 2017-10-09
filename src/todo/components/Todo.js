@@ -2,7 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Todo = ({ text, onClick }) => {
-	return <div onClick={onClick}>{text}</div>;
+	return (
+		<div className="Todo" onClick={onClick}>
+			{text}
+		</div>
+	);
 };
 
 Todo.propTypes = {

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components TodoList should render correctly 1`] = `
+<ul>
+  <div
+    className="Todo"
+    onClick={[Function]}
+  >
+    Todo 1
+  </div>
+</ul>
+`;

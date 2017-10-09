@@ -3,8 +3,6 @@ import PropTypes from "prop-types";
 import Todo from "./Todo";
 
 const TodoList = props => {
-	console.log("TodoList.render() props=", props);
-
 	return (
 		<ul>{props.todos.map(todo => <Todo key={todo.id} {...todo} onClick={() => props.onTodoClick(todo.id)} />)}</ul>
 	);
