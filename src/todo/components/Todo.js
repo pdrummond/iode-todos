@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import toUpperCase from "./toUpperCase";
 
 const Todo = ({ text, onClick }) => {
 	return (
@@ -16,4 +17,4 @@ Todo.propTypes = {
 	onClick: PropTypes.func.isRequired
 };
 
-export default Todo;
+export default toUpperCase(Todo);

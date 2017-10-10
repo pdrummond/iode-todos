@@ -4,8 +4,8 @@ export function addTodo(text) {
 	return { type: Actions.ADD_TODO, text };
 }
 
-export function toggleTodo(index) {
-	return { type: Actions.TOGGLE_TODO, index };
+export function toggleTodo(id) {
+	return { type: Actions.TOGGLE_TODO, id };
 }
 
 export function setVisibilityFilter(filter) {

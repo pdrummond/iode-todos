@@ -24,6 +24,11 @@ export default function reducer(state = initialState, action) {
 				todos: { $push: [{ id: state.nextTodoId, text: action.text, completed: false }] },
 				nextTodoId: { $set: state.nextTodoId + 1 }
 			});
+		case Actions.TOGGLE_TODO:
+			const index = state.todos.findIndex(todo => todo.id === action.id);
+			return update(state, {
+				todos: { [index]: { completed: { $set: !state.todos[index].completed } } }
+			});
 		default:
 			return state;
 	}
